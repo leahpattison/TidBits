@@ -16,6 +16,7 @@ window.onload = function() {
 	arm2.parent = arm;
     arm3.parent = arm2;
     context2.lineWidth = 0.25;
+    context2.strokeStyle = "#FFFAFA";
 
     update();
     
@@ -30,14 +31,14 @@ window.onload = function() {
         }
 
 		context.clearRect(0, 0, width, height);
-		arm.angle = Math.sin(angle * 0.49 ) * 3.0
-		arm2.angle = Math.cos(angle * 1.05 ) * 3.0;
-		arm3.angle = Math.sin(angle * 1.47) * 3.0;
+		arm.angle = Math.sin(angle * 1.0 - 1.0) * 2.476;
+		arm2.angle = Math.cos(angle*1.498 + 2) * 2.92;
+		arm3.angle = Math.sin(angle*2.002 - 0.5) * 2.34;
 		arm2.x = arm.getEndX();
 		arm2.y = arm.getEndY();
 		arm3.x = arm2.getEndX();
 		arm3.y = arm2.getEndY();
-		angle += 0.05;
+		angle += 0.03;
 		arm.render(context);
 		arm2.render(context);
         arm3.render(context);
