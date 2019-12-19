@@ -1,6 +1,6 @@
 
 html, body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Proxima-Nova', sans-serif;
     margin: 0px;
     background-color: #1A1A1D;
 }
@@ -25,7 +25,7 @@ canvas {
 }
 
 .box {
-  background-color:#00887A;
+  background-color:#363537;
   color: white;
   margin-left: 20px;
   margin-bottom: 20px;
@@ -37,11 +37,13 @@ canvas {
 
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: lighter;
 }
 
 a.button1{
@@ -64,9 +66,65 @@ a.button1:hover{
   background-color:#FFFFFF;
 }
 
+.button{
+  display:inline-block;
+  margin-top: 2em;
+  padding:0.3em 0.5em;
+  border:0.1em solid #FFFFFF;
+  margin:1em 0.8em 0.3em 0;
+  background-color: #363537;;
+  color:#FFFFFF;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-size:0.9rem;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+
+.button:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+}
+
 @media all and (max-width:30em){
   a.button1{
   display:block;
   margin:0.4em auto;
  }
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 5px;
+  border-radius: 2.5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 55%;
+  width: 20px;
+  height: 20px;
+  background: #D9F0FF;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #D9F0FF;
+  cursor: pointer;
 }

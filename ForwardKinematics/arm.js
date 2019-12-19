@@ -41,7 +41,7 @@ var Arm = Arm || {
 
     render: function(context){
         context.strokeStyle = "#eeeeee";
-        context.lineWidth = 5;
+        context.lineWidth = 0.8;
         context.beginPath();
         context.moveTo(this.x, this.y);
         context.lineTo(this.getEndX(), this.getEndY());
